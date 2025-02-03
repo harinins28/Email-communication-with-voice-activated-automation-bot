@@ -27,7 +27,6 @@ def get_info():
 def send_email(receiver, subject, message):
     server = smtplib.SMTP('smtp.office365.com', 587)
     server.starttls()
-    # Make sure to give app access in your Google account
     server.login('foredupurpose123@outlook.in', 'n0on3elsE')
     email = EmailMessage()
     email['From'] = 'Sender_Email'
